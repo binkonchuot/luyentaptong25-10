@@ -8,15 +8,32 @@
  <h1> Enter a number: </h1>
  <input type="text" id="so">
  <button onclick=checkNumb()>Show</button>
-<script>
-    let so = arr[];
-    function checkNumb() {
-        let so = document.getElementById("so").value;
-        for ( i = 0; i < = arr.length)
-        if (so  ) {
+ <script>
+     function num(N) {
+         if (N < 2) {
+             return false;
+         }
+         for (let i = 2; i < N; i++) {
+             if (N % i === 0) {
+                 return false;
+             }
+         }
+         return true;
+     }
 
-        }
-    }
-</script>
+     function check() {
+         let input = +document.getElementById("num").value;
+         let count = 0;
+         for (let i = 0; i < input;) {
+             if (num(count) === true) {
+                 document.write(count + ",");
+                 i++
+             }
+             count++
+         }
+     }
+
+     check();
+ </script>
 </body>
 </html>
