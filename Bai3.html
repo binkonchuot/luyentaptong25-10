@@ -10,14 +10,14 @@ Nhập năm sinh :<br>
 <input type="text" size="30" id="so"><br><br>
 <button onclick="tinh()">Kiểm tra</button>
 <script>
-    function tinh() {
-        let so = +document.getElementById("so").value;
-        if (so > 2021) {
-            document.write('Không hợp lệ')
-        } else {
-            if (so)
-            document.write('')
-        }
+    let today = new Date();
+    let date = today.getFullYear();
+    let birthYear = +prompt('Nhập năm sinh : ');
+    if (birthYear > date) {
+        alert('Không hợp lệ nhé');
+    } else {
+        let result = date - birthYear;
+        alert('Bạn năm nay ' + result + ' tuội!');
     }
 </script>
 </body>
