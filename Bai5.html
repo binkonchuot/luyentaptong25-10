@@ -5,6 +5,26 @@
     <title>Bài 5</title>
 </head>
 <body>
+<script>
+    let array = [
+        [4, 2, 3],
+        [1, 8, 6],
+        [7, 2, 9],
+    ]
+    function sumSubOfArray(arr){
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if(i === j){
+                    sum += arr[i][j];
+                }
+            }
+
+        }
+        return sum;
+    }
+    document.write(sumSubOfArray(array));
+</script>
 
 </body>
 </html>
