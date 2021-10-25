@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<h4>Kiểm tra độ tuổi theo năm sinh</h4><br>
+Nhập năm sinh :<br>
+<input type="text" size="30" id="so"><br><br>
+<button onclick="tinh()">Kiểm tra</button>
+<script>
+    function tinh() {
+        let so = +document.getElementById("so").value;
+        if (so > 2021) {
+            document.write('Đủ tuổi')
+        } else {
+            document.write('Không hợp lệ')
+        }
+    }
+</script>
+</body>
+</html>
